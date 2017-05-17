@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JSg-qQ-DLr">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hyper Eye View Controller-->
+        <scene sceneID="fpg-XQ-GIn">
+            <objects>
+                <viewController id="JSg-qQ-DLr" customClass="SQNHyperEyeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wVI-sC-DES"/>
+                        <viewControllerLayoutGuide type="bottom" id="iU0-xS-M3b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="42K-d1-DPZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JDc-xy-vAi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGO-vK-5G1">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="shadowOffset" width="2" height="2"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaG-kL-8Fi">
+                                        <rect key="frame" x="99" y="579" width="177" height="30"/>
+                                        <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="177" id="Aps-QB-3gZ"/>
+                                            <constraint firstAttribute="height" constant="30" id="sdw-g4-b9U"/>
+                                        </constraints>
+                                        <state key="normal" title="Save image">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="saveImageAction:" destination="JSg-qQ-DLr" eventType="touchUpInside" id="NKK-Zd-T4h"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7I-d4-DTR">
+                                        <rect key="frame" x="7" y="617" width="177" height="30"/>
+                                        <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="c0S-kf-8sI"/>
+                                            <constraint firstAttribute="width" constant="177" id="ddw-Sl-fdS"/>
+                                        </constraints>
+                                        <state key="normal" title="Begin processing">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="beginProcessingAction:" destination="JSg-qQ-DLr" eventType="touchUpInside" id="lSm-eu-XJk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sb4-pc-DvY">
+                                        <rect key="frame" x="192" y="617" width="177" height="30"/>
+                                        <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="177" id="I32-8I-MB5"/>
+                                            <constraint firstAttribute="height" constant="30" id="fo5-Lp-m8K"/>
+                                        </constraints>
+                                        <state key="normal" title="Stop processing">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="stopProcessingAction:" destination="JSg-qQ-DLr" eventType="touchUpInside" id="G07-6f-MA1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Sb4-pc-DvY" firstAttribute="top" secondItem="MaG-kL-8Fi" secondAttribute="bottom" constant="8" id="AW7-2n-rRT"/>
+                                    <constraint firstAttribute="trailing" secondItem="yGO-vK-5G1" secondAttribute="trailing" id="CDs-XF-QFT"/>
+                                    <constraint firstItem="yGO-vK-5G1" firstAttribute="top" secondItem="JDc-xy-vAi" secondAttribute="top" constant="50" id="L1m-l1-10z"/>
+                                    <constraint firstAttribute="centerX" secondItem="MaG-kL-8Fi" secondAttribute="centerX" id="Mjv-l4-Y0y"/>
+                                    <constraint firstItem="yGO-vK-5G1" firstAttribute="leading" secondItem="JDc-xy-vAi" secondAttribute="leading" id="TZs-fE-2Yx"/>
+                                    <constraint firstAttribute="bottom" secondItem="n7I-d4-DTR" secondAttribute="bottom" constant="20" id="eEq-fs-EFN"/>
+                                    <constraint firstItem="n7I-d4-DTR" firstAttribute="top" secondItem="MaG-kL-8Fi" secondAttribute="bottom" constant="8" id="lJx-z9-fS7"/>
+                                    <constraint firstItem="MaG-kL-8Fi" firstAttribute="leading" secondItem="n7I-d4-DTR" secondAttribute="trailing" constant="-85" id="tfO-Ly-dO6"/>
+                                    <constraint firstItem="Sb4-pc-DvY" firstAttribute="leading" secondItem="MaG-kL-8Fi" secondAttribute="trailing" constant="-84" id="uJR-J1-FLn"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="2jP-W4-dCW" appends="YES" id="v6A-yD-aKY"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JDc-xy-vAi" firstAttribute="leading" secondItem="42K-d1-DPZ" secondAttribute="leading" id="6ff-Wn-lMH"/>
+                            <constraint firstItem="iU0-xS-M3b" firstAttribute="bottom" secondItem="JDc-xy-vAi" secondAttribute="bottom" id="erB-KQ-02X"/>
+                            <constraint firstAttribute="trailing" secondItem="JDc-xy-vAi" secondAttribute="trailing" id="fYs-Ob-gEt"/>
+                            <constraint firstItem="JDc-xy-vAi" firstAttribute="top" secondItem="42K-d1-DPZ" secondAttribute="top" id="m5G-sA-vL5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cameraView" destination="JDc-xy-vAi" id="x0D-hK-joN"/>
+                        <outlet property="lbResult" destination="yGO-vK-5G1" id="nRQ-oa-1w1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jh8-Wr-yTH" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="2jP-W4-dCW">
+                    <connections>
+                        <action selector="doPinchGesture:" destination="JSg-qQ-DLr" id="YlO-J6-5qi"/>
+                    </connections>
+                </pinchGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-434" y="113"/>
+        </scene>
+    </scenes>
+</document>
